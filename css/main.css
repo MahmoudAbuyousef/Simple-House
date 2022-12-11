@@ -1,0 +1,251 @@
+/* Start Global */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/dummy-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+section {
+  padding: 20px;
+}
+
+/* End Global */
+
+/* Start contanier */
+
+.contanier {
+  width: 95%;
+  margin: auto;
+  background-color: #fff;
+}
+
+/* End contanier */
+
+/* Start Header */
+
+header {
+  height: 600px;
+  background-image: url("../images/simple-house-01.jpg");
+  display: flex;
+  align-items: flex-end;
+}
+
+header .flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+header .flex .logo {
+  margin: 10px;
+  cursor: pointer;
+}
+
+header .flex nav ul li {
+  margin: 10px;
+  padding: 10px;
+}
+
+header .flex nav ul li:hover {
+  border-bottom: 1px solid #ccc;
+}
+
+header .flex nav ul li a {
+  color: #fff;
+}
+
+header .flex nav ul .active {
+  border-bottom: 1px solid #ccc;
+}
+
+header .flex .logo {
+  display: flex;
+}
+
+header .flex .text {
+  color: #fff;
+  margin-left: 5px;
+}
+
+header .flex .text a {
+  margin: 5px 0;
+  color: #fff;
+}
+
+header .flex .logo img {
+  width: 50px;
+}
+
+/* End Header */
+
+/* Start Main Section */
+
+.main {
+  text-align: center;
+}
+
+.main h2 {
+  margin: 20px 0;
+}
+
+.main .paragraph {
+  text-align: center;
+}
+
+.main .paragraph p {
+  width: 50%;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.main .links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main .links ul li {
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #2F956D;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.main .links ul li a {
+  color: #2F956D;
+}
+
+.main .links ul .active {
+  background-color: #2F956D;
+}
+
+.main .links ul .active a {
+  color: #fff;
+}
+
+.main .links ul li:hover {
+  background-color: #2F956D;
+}
+
+.main .links ul li:hover a {
+  color: #fff;
+}
+
+/* End Main Section */
+
+/* Start prodaucts Section */
+
+.prodaucts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prodaucts .item {
+  width: calc(100% / 4);
+  margin-bottom: 20px;
+}
+
+.prodaucts .item img {
+  width: 270px;
+  transition: all .5s;
+}
+
+.prodaucts .item img:hover {
+  transform: scale(1.1);
+}
+
+.prodaucts .item h3 {
+  color: #B5C6D6;
+  margin: 20px 0;
+}
+
+.prodaucts .item p {
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.prodaucts .item span {
+  color: #2F956D;
+}
+
+/* End prodaucts Section */
+
+/* Start section */
+
+.kewy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kewy .left {
+  width: 50%;
+}
+
+.kewy .right {
+  width: 50%;
+  position: relative;
+}
+
+.kewy .right h3 {
+  color: #B5C6D6;
+  margin-bottom: 20px;
+}
+
+.kewy .right p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.kewy .right p a {
+  color: blue;
+}
+
+.kewy .right button {
+  position: absolute;
+  right: 50px;
+  bottom: 10px;
+  padding: 10px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #B5C6D6;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.kewy .right button:hover {
+  background-color: #2F956D;
+  color: #fff;
+}
+
+
+
+/* end section */
+
+/* Start Footer */
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* End Footer */
