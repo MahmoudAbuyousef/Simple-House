@@ -1,34 +1,13 @@
-/* Start Global */
-
+/* Start My Framework */
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-image: url("../images/dummy-img.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #ccc;
 }
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-}
-
-section {
-  padding: 20px;
-}
-
-/* End Global */
-
-/* Start contanier */
 
 .contanier {
   width: 95%;
@@ -36,216 +15,209 @@ section {
   background-color: #fff;
 }
 
-/* End contanier */
-
-/* Start Header */
-
-header {
-  height: 600px;
-  background-image: url("../images/simple-house-01.jpg");
-  display: flex;
-  align-items: flex-end;
+.contanier-c {
+  width: 95%;
+  margin: auto;
 }
 
-header .flex {
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* End My Framework */
+
+/* Start Header */
+header {
+  display: flex;
+  align-items: flex-end;
+  background-image: url("../images/simple-house-01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 460px;
+}
+
+header nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 10px 30px;
+  align-items: center;
+  padding: 40px 50px;
 }
 
-header .flex .logo {
-  margin: 10px;
-  cursor: pointer;
-}
-
-header .flex nav ul li {
-  margin: 10px;
-  padding: 10px;
-}
-
-header .flex nav ul li:hover {
-  border-bottom: 1px solid #ccc;
-}
-
-header .flex nav ul li a {
+header nav .logo-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
   color: #fff;
+  font-size: 20px;
 }
 
-header .flex nav ul .active {
-  border-bottom: 1px solid #ccc;
+header nav .logo-left h1 {
+  margin-bottom: 10px;
 }
 
-header .flex .logo {
+header nav .right-links ul {
+  display: flex;
+  padding-left: 0;
+}
+
+header nav .right-links ul li {
+  padding: 10px;
   display: flex;
 }
 
-header .flex .text {
-  color: #fff;
-  margin-left: 5px;
-}
-
-header .flex .text a {
-  margin: 5px 0;
+header nav .right-links ul li a {
   color: #fff;
 }
 
-header .flex .logo img {
-  width: 50px;
+header nav .right-links ul li:hover {
+  border-bottom: 1px solid #ccc;
 }
 
 /* End Header */
 
 /* Start Main Section */
-
 .main {
+  padding: 70px 0;
   text-align: center;
 }
 
-.main h2 {
-  margin: 20px 0;
-}
-
-.main .paragraph {
-  text-align: center;
-}
-
-.main .paragraph p {
+.main p {
   width: 50%;
-  margin: auto;
-  line-height: 1.6;
+  margin: 30px auto;
 }
 
-.main .links {
-  margin-top: 20px;
+.main .list-food ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.main .links ul li {
+.main .list-food ul li {
   width: 100px;
-  margin: 10px;
   padding: 10px;
-  border: 2px solid #2F956D;
+  border: 1px solid #2f956d;
+  margin: 0 10px;
+  transition: all .5s;
+}
+
+.main .list-food ul .active,
+.main .list-food ul .active a  {
+  background-color: #2f956d;
+  color: #fff;
+}
+
+.main .list-food ul li a {
+  color: #2f956d;
+}
+
+.main .list-food ul li:hover {
+  background-color: #2f956d;
   cursor: pointer;
-  transition: all 1s;
 }
 
-.main .links ul li a {
-  color: #2F956D;
-}
-
-.main .links ul .active {
-  background-color: #2F956D;
-}
-
-.main .links ul .active a {
+.main .list-food ul li:hover a {
   color: #fff;
 }
-
-.main .links ul li:hover {
-  background-color: #2F956D;
-}
-
-.main .links ul li:hover a {
-  color: #fff;
-}
-
 /* End Main Section */
 
-/* Start prodaucts Section */
-
-.prodaucts {
+/* Start Section Food Items */
+.food .contanier-c {
   display: flex;
   flex-wrap: wrap;
 }
 
-.prodaucts .item {
-  width: calc(100% / 4);
-  margin-bottom: 20px;
+.food article {
+  width: calc((100% - 80px) / 4);
+  margin: 20px 10px;
 }
 
-.prodaucts .item img {
-  width: 270px;
-  transition: all .5s;
-}
-
-.prodaucts .item img:hover {
-  transform: scale(1.1);
-}
-
-.prodaucts .item h3 {
-  color: #B5C6D6;
-  margin: 20px 0;
-}
-
-.prodaucts .item p {
-  line-height: 1.6;
-  margin: 5px 0;
-}
-
-.prodaucts .item span {
-  color: #2F956D;
-}
-
-/* End prodaucts Section */
-
-/* Start section */
-
-.kewy {
-  display: flex;
-  justify-content: space-between;
-}
-
-.kewy .left {
-  width: 50%;
-}
-
-.kewy .right {
-  width: 50%;
-  position: relative;
-}
-
-.kewy .right h3 {
-  color: #B5C6D6;
-  margin-bottom: 20px;
-}
-
-.kewy .right p {
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.kewy .right p a {
-  color: blue;
-}
-
-.kewy .right button {
-  position: absolute;
-  right: 50px;
-  bottom: 10px;
-  padding: 10px;
-  background-color: transparent;
-  outline: none;
-  border: 1px solid #B5C6D6;
-  cursor: pointer;
+.food article img {
   transition: all 1s;
 }
 
-.kewy .right button:hover {
-  background-color: #2F956D;
-  color: #fff;
+.food article img:hover {
+  transform: scale(1.1);
 }
 
+.food article figcaption {
+  width: 90%;
+}
 
+.food article figcaption h3,
+p,
+span {
+  margin: 10px 0;
+}
 
-/* end section */
+.food article figcaption h3 {
+  color: #6484be;
+}
+
+.food article figcaption span {
+  color: #2f956d;
+}
+
+/* End Section Food Items */
+
+/* Start Article */
+
+article .contanier-c {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+article .contanier-c .photo {
+  width: 50%;
+}
+
+article .contanier-c .photo img {
+  width: 100%;
+  height: 100%;
+}
+
+article .contanier-c .text {
+  width: 50%;
+  padding: 0 100px 0 40px ;
+}
+
+article .contanier-c .text a {
+  color: #00f;
+}
+
+article .contanier-c .text h3 {
+  color: #6484be;
+}
+
+article .contanier-c .text .read {
+  display: flex;
+  justify-content: end;
+}
+
+article .contanier-c .text .read button {
+  border: 1px solid #ccc;
+  background-color: transparent;
+  font-size: 17px;
+  padding: 10px;
+  color: gray;
+}
+
+/* End Article */
 
 /* Start Footer */
-
 footer {
+  padding: 20px 0;
   text-align: center;
-  padding: 20px;
+  color: gray;
 }
-
 /* End Footer */
